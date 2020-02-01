@@ -18,7 +18,7 @@ body {
 #introParagraph {
     width: 25vw;
     position: absolute;
-    top: 19vw;
+    top: 22vw;
     left: 10vw;
     border-style: solid;
     border-width: 1px;
@@ -29,13 +29,19 @@ body {
     left: 5vw;
     font-family: sans-serif;
 }
+#introParagraph img {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    bottom: 10vw;
+}
 #forecast {
     position: absolute;
     top: 45vw;
 }
 input {
     position: absolute;
-    bottom: 13vw;
+    bottom: 5vw;
     left: 9.5vw;
     opacity: 0.6;
     width: 14vw;
@@ -48,9 +54,8 @@ input:hover{
     background: #33ffff;
 }
 #button {
-    position: relative;
+    position: absolute;
     left: 9.5vw;
-    bottom: 4vw;
     width: 18vw;
     font-size: 3.5vw;
     font-family: sans-serif;

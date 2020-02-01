@@ -3,29 +3,24 @@
 {% load static %}
 
 <html lang="en">
-  <head>
-    <link href="../../static/forecaster/result.css" rel="stylesheet">
+    <head>
+        <link href="{% static 'forecaster/result.css' %}" rel="stylesheet">
+        <title>Golden Fields</title>
+    </head>
 
-    <title>Golden Fields</title>
-  </head>
+    <body>
+        <div id="result">
+            <img src="{% static 'forecaster/resultTruck.png' %}">
+        </div>
 
-  <body>
+        <div id="resultParagraph">
+            <h1>Your awesome results: {{ results }}</h1>
+        </div>
 
-      <div >
+        <form action="/forecaster/">
+            <button type="submit" id="button">Home</button>
+        </form>
 
-          <h1><strong>Golden Fields</strong></h1>
-          <h6>Better algorithms. Better corn.</h6>
-
-            {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-
-
-            <h2>Your awesome results: {{ results }}</h2>
-
-          <div>
-            <form action="/forecaster/">
-                <button type="submit">Home</button>
-            </form>
-          </div>
 
       </div>
 

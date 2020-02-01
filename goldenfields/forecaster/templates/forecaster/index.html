@@ -17,6 +17,7 @@
       <div id="introParagraph">
           <h1>{{ current_location }}</h2>
           <h1>{{ current_temp }}</h3>
+          <img src="{% static 'forecaster/mapPin.png' %}">
       </div>
 
       <div id="forecast">
@@ -24,6 +25,8 @@
               <input type="text" id="locText" name="location" placeholder="What city?">
               <button type="submit" id="button"><strong>Forecast</strong></button>
           </form>
+      </div>
+      <div id="sapce">
       </div>
   </body>
 
