@@ -1,0 +1,67 @@
+body {
+  background-color: #1f1f2e;
+  color: #FAEBD7
+}
+#pageTitle {
+    color: white;
+    font-size: 6vw;
+    font-family: sans-serif;
+    text-align: center;
+}
+#golden {
+    color: #1E88E5;
+}
+#fields {
+    color: orange;
+    font-style: italic;
+}
+#introParagraph {
+    width: 25vw;
+    position: absolute;
+    top: 19vw;
+    left: 10vw;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.5vw;
+}
+#introParagraph h1 {
+    position: relative;
+    left: 5vw;
+    font-family: sans-serif;
+}
+#forecast {
+    position: absolute;
+    top: 45vw;
+}
+input {
+    position: absolute;
+    bottom: 13vw;
+    left: 9.5vw;
+    opacity: 0.6;
+    width: 14vw;
+    font-size: 2vw;
+    font-weight: bold;
+    background: white;
+    border-radius: 0.3vw;
+}
+input:hover{
+    background: #33ffff;
+}
+#button {
+    position: relative;
+    left: 9.5vw;
+    bottom: 4vw;
+    width: 18vw;
+    font-size: 3.5vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5vw;
+}
+#button:default {
+    background: black;
+    opacity: 0.65;
+}
+#button:hover {
+    background: pink;
+}
