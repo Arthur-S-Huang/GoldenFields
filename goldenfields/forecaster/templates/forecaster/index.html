@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using godtier skills"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        ::placeholder { /* Firefox, Chrome, Opera */
+            opacity: 0.5;
+	    color: white;
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            opacity: 0.5;
+	    color: white;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            opacity: 0.5;
+	    color: white;
+        }
+    </style>
+
+      <title>Golden Fields</title>
+  </head>
+
+  <body>
+
+      <div style="padding-top: 2em; padding-left:2.5em;">
+
+          <h1 style="font-size: 4em; line-height: 80%; color: black;"><strong>Golden Fields</strong></h1>
+          <h6 style="color: black; line-height: 80%; padding-bottom: 1.25em;">Better algorithms. Better corn.</h6>
+
+            {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+
+            <h2>{{ current_location }}</h2>
+            <h3>{{ current_temp }}</h3>
+
+
+            <form class="form-signin" method="POST" action="/forecaster/predict/">
+                  <button type="submit"><strong>Forecast</strong></button>
+            </form>
+
+      </div>
+
+  </body>
+
+</html>
